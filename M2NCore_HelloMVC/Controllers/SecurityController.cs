@@ -27,7 +27,7 @@ namespace M2NCore_HelloMVC.Controllers
 
             if (email == "luis@qboinstitute.com" && password == "123456")
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Home", new { area="Marketing"});
             }
 
             return RedirectToAction("Login");
